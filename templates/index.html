@@ -1,0 +1,317 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{% static 'content/css/styles.css' %}">
+
+        <!-- =====BOX ICONS===== -->
+        <link href="{% static 'https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' %}" rel='stylesheet'>
+        <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#"  class="nav__logo">Data Science Learner</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title"></br><br>Hi,<br>I'am <span class="home__title-color">Vikas Bisoi</span><br> Data Science<br> Aspirant.</h1>
+                     <br>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                  <!-- <a href= "" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a> --->
+
+                </div>
+
+                <div class="home__img">    
+                    <img src="{% static 'content/img/vikascover.jpg' %}" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="{% static 'content/img/bisoi.jpg' %}" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Vikas.</h2>
+                        <p class="about__text">So here we go.................<br>
+
+ I may not be perfect but maybe fervent.I am not very special than most of others I am me,yeah this is me "Vikas Bisoi",currently perusing an Masters degree from Ramniranjan Jhunjhunwala college in Data Science And Artificial Intelligence Field, Mumbai University .what makes me different than others are:
+
+I am passionate about learning and my work.
+
+I have hunger for knowledge and determination to turn knowledge into an Action.
+
+I consider Myself  a ‘Forever Learner'.
+
+Last but not least I'm a 'Sports Person'.</p>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">Django</span>
+                            </div>
+                            <div class="skills__bar skills__django">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                         <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skills__bar skills__sql">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                         <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Web Development</span>
+                            </div>
+                            <div class="skills__bar skills__webdevlopment">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">C</span>
+                            </div>
+                            <div class="skills__bar skills__C">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__C++" >
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"  >85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="{% static 'content/img/work3.jpg' %}" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+
+            <!--===== Education=====-->
+            <section class="skills section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <img src="{% static 'content/img/vikas555.jpg' %}" height="500" alt="" class="skills__img">
+                    </div>
+                    <div>
+                        <h2 class="skills__subtitle">Educational Details</h2>
+                        <p class="skills__text">
+<b>B.sc. in Information Technology</b><br>
+
+      Ramniranjan Jhunjhunwala College, Mumbai University ,2020.
+
+ <br><br>
+                            <b>HSC</b>
+<br>
+      Ramniranjan Jhunjhunwala College, Maharashtra State Board, 2017.
+
+<br><br>
+
+
+  <b>SSC</b><br>
+
+      Hindi High School, Maharashtra State Board, 2015.
+</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">Bsc.IT</span>
+                            </div>
+                            <div class="skills__bar skills__python" >
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">61%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">HSC</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">SSC</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="{% static 'content/img/vikas1.jpg' %}" alt="" width="400" >
+                        <a href="https://sites.google.com/view/iamvikasbisoi/project-work/society-management-android-applicationwebsite?authuser=0"><b>Society Management(click here to know more)</b></a>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'content/img/vikas.jpg'  %}" alt="" width="400" >
+                        <a href="https://sites.google.com/view/iamvikasbisoi/project-work/automatic-attendance-system?authuser=0"><b>Automatic Attendance System using Face Recognition(click here to know more)</b></a>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'content/img/vikas6.jpg' %}" width="400" alt="">
+                        <a href="#work"><b>Automatic EDA and VDA(Click here to know more)</b></a>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'content/img/vikas222.jpg' %}" width="400" alt="">
+                        <a href="#work"><b>Library Automation(Coming Soon)</b></a>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'content/img/vikas111.jpg' %}" alt="" width="400" >
+                        <a href="#work"><b>Covid 19 Contact Tracing App(Coming Soon)</b></a>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'content/img/vikas9.jpg' %}" alt="" width="300" height="100">
+                        <a href="#work"><b>Many More to go........!</b></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            {% block content %}
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="#contact"  method="POST" class="contact__form">
+                        {% csrf_token %}
+                        <input name="name" type="text" placeholder="Name" class="contact__input">
+                        <input name="email" type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="subject" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <!--<input type="button" value="Submit" class="contact__button button">-->
+                        <a href="contact" class="button">Submit</a>
+                    </form>
+                </div>
+            </section>
+        </main>
+        {% endblock %}
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Thank You for your Precious Time!</p>
+            <div class="footer__social">
+                <!--<a href="{% static '#' %}" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="{% static '#' %}" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="{% static '#' %}" class="footer__icon"><i class='bx bxl-twitter' ></i></a>--->
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-d6aed147-6e9c-4cae-93ee-c359e02afcc8"></div>
+            </div>
+            <p>&#169; vikasbisoi copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="{% static 'content/js/main.js' %}"></script>
+    </body>
+</html>
